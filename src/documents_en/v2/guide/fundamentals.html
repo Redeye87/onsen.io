@@ -52,9 +52,10 @@ A template must be given a unique ID that will be used later on to reference the
 - Using [`<template>` elements](https://developer.mozilla.org/en/docs/Web/HTML/Element/template) inside `index.html`: Sometimes is useful to have a bunch of templates in the main file (`index.html`). HTML template elements can hold pages just like separate files do. Their ID must be manually specified by the `id` attribute. For example:
 
   ```html
-  <template id="page.html">
+  <ons-template id="page.html">
     <ons-page><!-- Content here--></ons-page>
-  </template>
+  </ons-template>
+  <ons-navigator page="page.html"></ons-navigator>
   ```
 
   > [`<ons-template>` element](/v2/api/js/ons-template.html) is also supported for the same purpose, but native `<template>` is preferred since v2.4.0
